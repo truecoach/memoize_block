@@ -23,7 +23,7 @@ module MemoizeBlock
   # end
   #
   def memoize(ivar_name = nil)
-    ivar_name = ivar_name.nil? ? caller_locations[0].label : ivar_name
+    ivar_name = caller_locations[0].label if ivar_name.nil?
 
     raise 'invalid ivar name' if ivar_name.match(/@|!/)
 

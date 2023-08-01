@@ -3,6 +3,7 @@ AllCops:
   Include:
     - 'lib/**/*'
     - 'spec/**/*'
+  NewCops: enable
 
 Layout/LineLength:
   Max: 120

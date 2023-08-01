@@ -23,9 +23,9 @@ module MemoizeBlock
   # end
   #
   def memoize(ivar_name = nil)
-    ivar_name = caller_locations[0].label if ivar_name.nil?
+    ivar_name = caller_locations[0].label.gsub('?', '__') if ivar_name.nil?
 
-    raise 'invalid ivar name' if ivar_name.match(/@|!/)
+    raise 'invalid ivar name' if ivar_name.match(/@|!|\?/)
 
     full_ivar_name = "@_#{ivar_name}"
 

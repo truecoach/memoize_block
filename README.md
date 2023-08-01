@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/truecoach/memoize_block.svg?branch=main)](https://travis-ci.com/truecoach/memoize_block)
+[![Build Status](https://github.com/truecoach/memoize_block/workflows/CI/badge.svg)](https://github.com/truecoach/memoize_block/actions)
 
 # MemoizeBlock
 

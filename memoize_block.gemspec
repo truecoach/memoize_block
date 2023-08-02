@@ -3,8 +3,8 @@ require_relative 'lib/memoize_block/version'
 Gem::Specification.new do |spec|
   spec.name          = "memoize_block"
   spec.version       = MemoizeBlock::VERSION
-  spec.authors       = ["Adam Steel"]
-  spec.email         = ["adamgsteel@gmail.com"]
+  spec.authors       = ["Adam Steel", "Tom Bonan"]
+  spec.email         = ["adamgsteel@gmail.com", "tombonan018@gmail.com"]
   spec.summary       = %q{Inline memoize helper method}
   spec.description   = %q{
     Easily memoize any operation with this global method that takes a block.

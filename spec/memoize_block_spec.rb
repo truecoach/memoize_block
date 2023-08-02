@@ -35,6 +35,18 @@ RSpec.describe MemoizeBlock, '#memoize' do
     end
   end
 
+  context 'given a boolean method' do
+    def memoize_result?
+      memoize do
+        action.call(true)
+      end
+    end
+
+    it 'allows the ivar name to be defined' do
+      expect { memoize_result? }.to change { instance_variable_defined?('@_memoize_result__') }.to(true)
+    end
+  end
+
   context 'given a custom ivar name' do
     let(:memoized_name) { 'custom_ivar_name' }
 

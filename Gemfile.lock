@@ -11,7 +11,7 @@ GEM
     diff-lcs (1.5.0)
     json (2.6.3)
     language_server-protocol (3.17.0.3)
-    method_source (1.0.0)
+    method_source (1.1.0)
     parallel (1.23.0)
     parser (3.2.2.3)
       ast (~> 2.4.1)
@@ -19,9 +19,9 @@ GEM
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
-    pry-doc (1.4.0)
+    pry-doc (1.7.0)
       pry (~> 0.11)
-      yard (~> 0.9.11)
+      yard (~> 0.9.21)
     racc (1.7.1)
     rainbow (3.1.1)
     rake (13.0.6)
@@ -55,7 +55,7 @@ GEM
       parser (>= 3.2.1.0)
     ruby-progressbar (1.13.0)
     unicode-display_width (2.4.2)
-    yard (0.9.34)
+    yard (0.9.42)
 
 PLATFORMS
   ruby
@@ -65,7 +65,7 @@ DEPENDENCIES
   pry
   pry-doc
   rake (~> 13.0)
-  rspec (~> 3.0)
+  rspec (~> 3.0, >= 0)
   rubocop
 
 BUNDLED WITH
